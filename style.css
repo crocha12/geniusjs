@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: darkgray;
+}
+
+.row {
+    display: grid;
+    grid-template-areas: 'menu main-game' ;
+    height: 100vh;
+    width: 100vw;
+}
+
+.menu {
+    grid-area: 'menu';
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu button {
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main-game {
+    grid-area: 'main-game';
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 5px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+}
+
+.green {
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.selected {
+    opacity: 0.7;
+}
